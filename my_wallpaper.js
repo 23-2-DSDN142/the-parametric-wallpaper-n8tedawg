@@ -15,11 +15,37 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- // background(65, 173, 38); //pool table colour
- gfdmngjdfklgjfkl
+ background(65, 173, 38); //pool table colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
  // rect(40 ,40, rect_width, rect_height);
+
+ let ballX = 100
+ let ballY = 100
+
+ fill(0,0,0); //main black ball
+ strokeWeight(4);//determines the stroke of the shape
+ ellipse(ballX,ballY,100, 100); // draws a circle 100 pixels accross at location 100 pixels accross and 100 pixels down
+
+ fill(252,252,252); //white circle inside
+ strokeWeight(0);
+ ellipse(ballX+15,ballY+5,60,60);
+
+ strokeWeight(2); //the number 8
+ ellipse(ballX+19,ballY-3,15,15);
+ ellipse(ballX+20,ballY+15,20,20);
+
+ fill(252,252,252) //shine curve
+ strokeWeight(0);
+ ellipse(89,64,16,16);
+ ellipse(86,65,16,16); //middle part
+ ellipse(84,66,16,16);
+ ellipse(81,68,16,16); //middle part
+ ellipse(78,71,16,16);
+ ellipse(76,73,16,16); //middle part
+ ellipse(74,75,16,16);
+ ellipse(72,78,16,16); //middle curve
+ ellipse(70,81,16,16);
 
 }
