@@ -24,6 +24,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  let ballX = 100
  let ballY = 100
 
+ line(100,0,100,200)
+ line(0,100,200,100)
+
  fill(0,0,0); //main black ball
  strokeWeight(4);//determines the stroke of the shape
  ellipse(ballX,ballY,100, 100); // draws a circle 100 pixels accross at location 100 pixels accross and 100 pixels down
@@ -38,14 +41,32 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
  fill(252,252,252) //shine curve
  strokeWeight(0);
- ellipse(89,64,16,16);
- ellipse(86,65,16,16); //middle part
- ellipse(84,66,16,16);
- ellipse(81,68,16,16); //middle part
- ellipse(78,71,16,16);
- ellipse(76,73,16,16); //middle part
- ellipse(74,75,16,16);
- ellipse(72,78,16,16); //middle curve
- ellipse(70,81,16,16);
+ // ellipse(89,64,16,16);
+ // ellipse(86,65,16,16); //middle part
+ // ellipse(84,66,16,16);
+ // ellipse(81,68,16,16); //middle part
+ // ellipse(78,71,16,16);
+ // ellipse(76,73,16,16); //middle part
+ // ellipse(74,75,16,16);
+ // ellipse(72,78,16,16); //middle curve
+ // ellipse(70,81,16,16);
+
+ //bezierVertex() check out variable
+ //to do list: make triangle, cube thing, other coloured balls, pool stick. add parameters and if statements.
+
+ // example of a Bezier Curve
+ // noFill();
+ // beginShape();
+ // vertex (30,20);
+ // strokeWeight(5);
+ // bezierVertex(80,0,80,75,30,75);
+ // endShape();
+
+ beginShape();
+ vertex (95,60);
+ strokeWeight(0);
+ bezierVertex(90,55,80,50,60,80);
+ bezierVertex()
+ endShape();
 
 }
