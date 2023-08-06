@@ -27,7 +27,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  line(100,0,100,200)
  line(0,100,200,100)
 
- fill(0,0,0); //main black ball
+ fill(200,69,84); //main black ball
  strokeWeight(4);//determines the stroke of the shape
  ellipse(ballX,ballY,100, 100); // draws a circle 100 pixels accross at location 100 pixels accross and 100 pixels down
 
@@ -39,8 +39,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  ellipse(ballX+19,ballY-3,15,15);
  ellipse(ballX+20,ballY+15,20,20);
 
- fill(252,252,252) //shine curve
- strokeWeight(0);
+ //fill(252,252,252) //shine curve
+ //strokeWeight(0);
  // ellipse(89,64,16,16);
  // ellipse(86,65,16,16); //middle part
  // ellipse(84,66,16,16);
@@ -62,11 +62,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  // bezierVertex(80,0,80,75,30,75);
  // endShape();
 
- beginShape();
+
+ beginShape(); //shine
  vertex (95,60);
- strokeWeight(0);
- bezierVertex(90,55,80,50,60,80);
- bezierVertex()
+ bezierVertex(80,50,65,70,65,85);
+ bezierVertex(60,80,70,45,95,60); //93
  endShape();
 
 }
