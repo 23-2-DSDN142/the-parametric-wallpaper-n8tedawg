@@ -62,11 +62,20 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  // bezierVertex(80,0,80,75,30,75);
  // endShape();
 
+let curveX = 87 //80
+let curveY = 86 //80
+ //beginShape(); //shine
+ //vertex (95,60);
+ ////strokeWeight(0);
+ //bezierVertex(80,50,65,70,65,85);
+ //bezierVertex(50,80,65,35,95,60); //70,40
+ //endShape();
 
  beginShape(); //shine
- vertex (95,60);
- bezierVertex(80,50,65,70,65,85);
- bezierVertex(60,80,70,45,95,60); //93
+ vertex (curveX+15,curveY-20);
+ //strokeWeight(0);
+ bezierVertex(curveX,curveY-30,curveX-15,curveY-10,curveX-15,curveY+5);
+ bezierVertex(curveX-30,curveY,curveX-15,curveY-45,curveX+15,curveY-20); //70,40
  endShape();
 
 }
