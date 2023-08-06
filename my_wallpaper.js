@@ -27,7 +27,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  line(100,0,100,200)
  line(0,100,200,100)
 
- fill(200,69,84); //main black ball
+ fill(0,0,0); //main black ball
  strokeWeight(4);//determines the stroke of the shape
  ellipse(ballX,ballY,100, 100); // draws a circle 100 pixels accross at location 100 pixels accross and 100 pixels down
 
@@ -35,9 +35,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  strokeWeight(0);
  ellipse(ballX+15,ballY+5,60,60);
 
- strokeWeight(2); //the number 8
- ellipse(ballX+19,ballY-3,15,15);
- ellipse(ballX+20,ballY+15,20,20);
+ //strokeWeight(2); //the number 8
+ //ellipse(ballX+19,ballY-3,15,15);
+ //ellipse(ballX+20,ballY+15,20,20);
 
  //fill(252,252,252) //shine curve
  //strokeWeight(0);
@@ -62,8 +62,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  // bezierVertex(80,0,80,75,30,75);
  // endShape();
 
-let curveX = 87 //80
-let curveY = 86 //80
+let curveX = 83 //80//87
+let curveY = 95 //80//86
  //beginShape(); //shine
  //vertex (95,60);
  ////strokeWeight(0);
@@ -72,10 +72,14 @@ let curveY = 86 //80
  //endShape();
 
  beginShape(); //shine
- vertex (curveX+15,curveY-20);
+ vertex (curveX+17,curveY-35);//95,60 original 
  //strokeWeight(0);
- bezierVertex(curveX,curveY-30,curveX-15,curveY-10,curveX-15,curveY+5);
- bezierVertex(curveX-30,curveY,curveX-15,curveY-45,curveX+15,curveY-20); //70,40
+ bezierVertex(curveX,curveY-30,curveX-15,curveY-10,curveX-25,curveY);
+ bezierVertex(curveX-30,curveY,curveX-15,curveY-50,curveX+17,curveY-35); //70,40
  endShape();
+
+ textSize(60);
+ fill(0,0,0)
+ text("8",100,126);
 
 }
