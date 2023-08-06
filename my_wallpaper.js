@@ -35,50 +35,19 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  strokeWeight(0);
  ellipse(ballX+15,ballY+5,60,60);
 
- //strokeWeight(2); //the number 8
- //ellipse(ballX+19,ballY-3,15,15);
- //ellipse(ballX+20,ballY+15,20,20);
-
- //fill(252,252,252) //shine curve
- //strokeWeight(0);
- // ellipse(89,64,16,16);
- // ellipse(86,65,16,16); //middle part
- // ellipse(84,66,16,16);
- // ellipse(81,68,16,16); //middle part
- // ellipse(78,71,16,16);
- // ellipse(76,73,16,16); //middle part
- // ellipse(74,75,16,16);
- // ellipse(72,78,16,16); //middle curve
- // ellipse(70,81,16,16);
-
  //bezierVertex() check out variable
  //to do list: make triangle, cube thing, other coloured balls, pool stick. add parameters and if statements.
 
- // example of a Bezier Curve
- // noFill();
- // beginShape();
- // vertex (30,20);
- // strokeWeight(5);
- // bezierVertex(80,0,80,75,30,75);
- // endShape();
-
 let curveX = 83 //80//87
 let curveY = 95 //80//86
- //beginShape(); //shine
- //vertex (95,60);
- ////strokeWeight(0);
- //bezierVertex(80,50,65,70,65,85);
- //bezierVertex(50,80,65,35,95,60); //70,40
- //endShape();
 
  beginShape(); //shine
  vertex (curveX+17,curveY-35);//95,60 original 
- //strokeWeight(0);
  bezierVertex(curveX,curveY-30,curveX-15,curveY-10,curveX-25,curveY);
  bezierVertex(curveX-30,curveY,curveX-15,curveY-50,curveX+17,curveY-35); //70,40
  endShape();
 
- textSize(60);
+ textSize(60); //the number 8
  fill(0,0,0)
  text("8",100,126);
 
