@@ -1,12 +1,12 @@
 //your parameter variables go here!
- let ballX = 90 // controls the black ball itself
- let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
- let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
- let sparkleY = 50
- let moustacheX = 80 // controls the moustache
- let moustacheY = 125
+ let ballX = 157 // controls the black ball itself
+ let ballY = 120
+ let hatX = 43 // controls the purple hat he wears
+ let hatY = 115
+ let sparkleX = 93 // controls the sparkles on the top right
+ let sparkleY = 70
+ let moustacheX = 23 // controls the moustache
+ let moustacheY = 130
 
  let drawsymbol = true// TRUE draws the symbol.FALSE turns this 'if statement' off
  let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
@@ -15,16 +15,16 @@
  let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
-  //pWallpaper.output_mode(GLIDE_WALLPAPER);
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 110;
+  pWallpaper.grid_settings.cell_height = 250;
+  pWallpaper.grid_settings.row_offset  = 130;
 }
 
 function wallpaper_background() {
