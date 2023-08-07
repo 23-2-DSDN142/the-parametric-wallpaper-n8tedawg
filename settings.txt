@@ -26,7 +26,7 @@ Wallpaper 1:
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -60,7 +60,7 @@ let ballX = 90 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -94,7 +94,7 @@ let ballX = 90 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -130,7 +130,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
@@ -164,7 +164,7 @@ let ballX = 90 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -200,7 +200,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -234,7 +234,7 @@ let ballX = 90 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 195;
@@ -268,7 +268,7 @@ let ballX = 133 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 220;
@@ -302,7 +302,7 @@ let ballX = 157 // controls the black ball itself
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 110;
