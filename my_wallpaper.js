@@ -8,9 +8,6 @@
  let moustacheX = 23 // Controls the moustache
  let moustacheY = 130
 
- // To achieve Wallpaper background colour 3 and 7, change line 34 to (55,59,56) to achieve a grey colour.
- // To achieve Wallpaper colour 5, change line 34 to (65,173,38) to achieve a pool table colour.
-
  let drawsymbol = true// TRUE draws the symbol.FALSE turns this 'if statement' off
  let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
  let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off

@@ -76,13 +76,13 @@ function wallpaper_background() {
 
 Wallpaper 3:
 
-let ballX = 90 // controls the black ball itself
+let ballX = 90 // Controls the black ball itself
  let ballY = 125
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -103,7 +103,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(55, 59, 56); //grey colour
+ background(62, 60, 125); // Midnight sky blue colour
 }
 
 /////////////////////////////////
