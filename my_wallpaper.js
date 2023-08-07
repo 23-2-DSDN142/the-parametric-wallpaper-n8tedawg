@@ -1,21 +1,22 @@
 //your parameter variables go here!
- let ballX = 90//100 //controls the black ball itself
+ let ballX = 90//90 //controls the black ball itself
  let ballY = 125 //125
  let hatX = 75//80 // controls the purple hat he wears
  let hatY = 95
  let sparkleX = 150 //controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80//90 //controls the moustache
- let moustacheY = 120//125
- let drawsymbol = true // draws the full symbol
- let casualeightball = false //removes the moustache, hat and sparkles
- let hatwithball = false // 
- let double = false //makes two of them
- let miniballs = false // makes multiple mini balls
+ let moustacheX = 80//80 //controls the moustache
+ let moustacheY = 125//120
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = true // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
@@ -24,44 +25,45 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
-
-  //angleMode(DEGREES);
 }
 
 function wallpaper_background() {
  //background(65, 173, 38); //pool table colour
- //background(55, 59, 56); //grey colour
- background(62, 60, 125); //midnight sky blue
+ background(55, 59, 56); //grey colour
+ //background(62, 60, 125); //midnight sky blue
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
  //Draw8ball(55,55);
  //Draw8ball(145,145);
+
  if (drawsymbol){
-  Drawpurplehat(75,95);
-  Draw8ball(90,125);
-  DrawSparkles(150,50);
-  DrawMoustache(80,120);
+  Drawpurplehat(hatX,hatY);
+  Draw8ball(ballX,ballY);
+  DrawSparkles(sparkleX,sparkleY);
+  DrawMoustache(moustacheX,moustacheY);
  }
  else{}
 
  if (casualeightball){
   rotate(-5);
-  Draw8ball(100,100);
+  Draw8ball(ballX+10,ballY-25);
  }
- else{
-  //Drawpurplehat();
-  //Draw8ball(90,125);
-  //DrawSparkles();
-  //DrawMoustache();
- }
+ else{}
 
-if (double){
+if (casualdouble){
   rotate(-5);
-  Draw8ball(60,140); //bottom left
+  Draw8ball(ballX+30,ballY+15); //bottom left
   rotate(-5);
-  Draw8ball(140,60); //top right
+  Draw8ball(ballX+50,ballY-65); //top right
  }
+else{}
+
+if (nofacialhair){
+  Drawpurplehat(hatX,hatY);
+  Draw8ball(ballX,ballY);
+  DrawSparkles(sparkleX,sparkleY);
+}
 else{}
 
 if (miniballs){
@@ -145,7 +147,7 @@ function Drawpurplehat(hatX,hatY){//hatX,hatY){
 }
 
 function DrawMoustache(moustacheX,moustacheY){
-  fill(166, 171, 167)//moustache
+  fill(115, 115, 115)//moustache
   beginShape();
   vertex(moustacheX+25,moustacheY);
   bezierVertex(moustacheX+10,moustacheY-5,moustacheX,moustacheY,moustacheX-5,moustacheY+25)
