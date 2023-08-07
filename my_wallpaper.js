@@ -8,7 +8,7 @@
  let moustacheX = 80 // controls the moustache
  let moustacheY = 125
 
- let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let drawsymbol = true// TRUE draws the symbol.FALSE turns this 'if statement' off
  let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
  let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
  let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
@@ -86,7 +86,6 @@ else{}
 }
 
 function Drawpurplehat(hatX,hatY){
-
   fill(152, 14, 176) // purple magical hat
   strokeWeight(0);
   rotate(-10); 
