@@ -9,13 +9,15 @@
  let moustacheY = 120//125
  let drawsymbol = true // draws the full symbol
  let casualeightball = false //removes the moustache, hat and sparkles
- let double = false //makes two smaller 8 them
+ let hatwithball = false // 
+ let double = false //makes two of them
+ let miniballs = false // makes multiple mini balls
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
@@ -36,10 +38,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  //Draw8ball(55,55);
  //Draw8ball(145,145);
  if (drawsymbol){
-  Drawpurplehat();
+  Drawpurplehat(75,95);
   Draw8ball(90,125);
-  DrawSparkles();
-  DrawMoustache();
+  DrawSparkles(150,50);
+  DrawMoustache(80,120);
  }
  else{}
 
@@ -55,18 +57,36 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  }
 
 if (double){
-  rotate(-PI);
-  rotate(-PI);
-  Draw8ball(50,150);
-  Draw8ball(150,50);
+  rotate(-5);
+  Draw8ball(60,140); //bottom left
+  rotate(-5);
+  Draw8ball(140,60); //top right
  }
-else{
+else{}
 
+if (miniballs){
+scale(0.5); //top left ball
+Drawpurplehat(hatX,hatY);
+Draw8ball(ballX,ballY);
+DrawSparkles(sparkleX,sparkleY);
+DrawMoustache(moustacheX,moustacheY);
+
+rotate(4) // right side ball
+Drawpurplehat(hatX+180,hatY+130);
+Draw8ball(ballX+190,ballY+120);
+DrawSparkles(sparkleX+190,sparkleY+120);
+DrawMoustache(moustacheX+190,moustacheY+120);
+
+rotate(8) // bottom left ball
+Drawpurplehat(hatX-15,hatY+200);
+Draw8ball(ballX,ballY+200);
+DrawSparkles(sparkleX,sparkleY+200);
+DrawMoustache(moustacheX,moustacheY+200);
+ }
+else{}
 }
 
-}
-
-function Drawpurplehat(){//hatX,hatY){
+function Drawpurplehat(hatX,hatY){//hatX,hatY){
 
   fill(152, 14, 176)//purple magical hat
   strokeWeight(0);
@@ -117,20 +137,19 @@ function Drawpurplehat(){//hatX,hatY){
   //text("again",insidetriangleX+14,insidetriangleY+23)
  }
 
- function DrawSparkles(){
+ function DrawSparkles(sparkleX,sparkleY){
   fill(248, 255, 51)//sparkle
   quad(sparkleX,sparkleY,sparkleX+5,sparkleY+10,sparkleX,sparkleY+20,sparkleX-5,sparkleY+10) //top shine
   quad(sparkleX,sparkleY+25,sparkleX+5,sparkleY+35,sparkleX,sparkleY+45,sparkleX-5,sparkleY+35) //bottom shine
   quad(sparkleX+9,sparkleY+12,sparkleX+14,sparkleY+22,sparkleX+9,sparkleY+32,sparkleX+4,sparkleY+22) //right shine
 }
 
-function DrawMoustache(){
+function DrawMoustache(moustacheX,moustacheY){
   fill(166, 171, 167)//moustache
   beginShape();
   vertex(moustacheX+25,moustacheY);
   bezierVertex(moustacheX+10,moustacheY-5,moustacheX,moustacheY,moustacheX-5,moustacheY+25)
   bezierVertex(moustacheX+55,moustacheY-20,moustacheX+50,moustacheY+5,moustacheX+55,moustacheY+25)
   endShape();
-
  }
 
