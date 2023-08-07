@@ -1,22 +1,22 @@
 //your parameter variables go here!
- let ballX = 90//90 //controls the black ball itself
- let ballY = 125 //125
- let hatX = 75//80 // controls the purple hat he wears
+ let ballX = 90 // controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 //controls the sparkles on the top right
+ let sparkleX = 150 // controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80//80 //controls the moustache
- let moustacheY = 125//120
+ let moustacheX = 80 // controls the moustache
+ let moustacheY = 125
 
- let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
  let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
- let casualeightball = true // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
  let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
  let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
 
 function setup_wallpaper(pWallpaper) {
-  //pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(true); //set this to false when you're ready to print (to remove the lines)
@@ -29,8 +29,8 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
  //background(65, 173, 38); //pool table colour
- background(55, 59, 56); //grey colour
- //background(62, 60, 125); //midnight sky blue
+ //background(55, 59, 56); //grey colour
+ background(62, 60, 125); //midnight sky blue
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -53,7 +53,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 if (casualdouble){
   rotate(-5);
-  Draw8ball(ballX+30,ballY+15); //bottom left
+  Draw8ball(ballX-30,ballY+15); //bottom left
   rotate(-5);
   Draw8ball(ballX+50,ballY-65); //top right
  }
