@@ -8,13 +8,13 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
- let ballX = 90 // controls the black ball itself
+ let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -35,20 +35,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-let ballX = 90 // controls the black ball itself
+let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -69,7 +69,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
@@ -110,13 +110,13 @@ function wallpaper_background() {
 
 Wallpaper 4:
 
-let ballX = 90 // controls the black ball itself
+let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -139,20 +139,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 5:
 
-let ballX = 90 // controls the black ball itself
+let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -173,20 +173,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(65, 173, 38); //pool table colour
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 6:
 
- let ballX = 90 // controls the black ball itself
+ let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -209,20 +209,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 7:
 
-let ballX = 90 // controls the black ball itself
+let ballX = 90 // Controls the black ball itself
  let ballY = 125 
- let hatX = 75 // controls the purple hat he wears
+ let hatX = 75 // Controls the purple hat he wears
  let hatY = 95
- let sparkleX = 150 // controls the sparkles on the top right
+ let sparkleX = 150 // Controls the sparkles on the top right
  let sparkleY = 50
- let moustacheX = 80 // controls the moustache
+ let moustacheX = 80 // Controls the moustache
  let moustacheY = 125
 
  let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -243,20 +243,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(55, 59, 56); //grey colour
+ background(62, 60, 125); // Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 8:
 
-let ballX = 133 // controls the black ball itself
+let ballX = 133 // Controls the black ball itself
  let ballY = 150 
- let hatX = 50 // controls the purple hat he wears
+ let hatX = 50 // Controls the purple hat he wears
  let hatY = 80
- let sparkleX = 100 // controls the sparkles on the top right
+ let sparkleX = 100 // Controls the sparkles on the top right
  let sparkleY = 25
- let moustacheX = 30 // controls the moustache
+ let moustacheX = 30 // Controls the moustache
  let moustacheY = 95
 
  let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -277,20 +277,20 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 9:
 
-let ballX = 157 // controls the black ball itself
+let ballX = 157 // Controls the black ball itself
  let ballY = 120 
- let hatX = 43 // controls the purple hat he wears
+ let hatX = 43 // Controls the purple hat he wears
  let hatY = 115
- let sparkleX = 93 // controls the sparkles on the top right
+ let sparkleX = 93 // Controls the sparkles on the top right
  let sparkleY = 70
- let moustacheX = 23 // controls the moustache
+ let moustacheX = 23 // Controls the moustache
  let moustacheY = 130
 
  let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
@@ -311,7 +311,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(62, 60, 125); //midnight sky blue
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////

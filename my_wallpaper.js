@@ -111,7 +111,7 @@ function Drawpurplehat(hatX,hatY){ // This draws the purple magical hat.
  
   textSize(60); // TEXT the number 8
   fill(0,0,0)
-  text("8",ballX,ballY+20);
+  text("8",ballX,ballY+20); // My friend recommended me using the Text tool rather than having to make shapes out of the ellipse tool to create the 8.
  }
 
  function DrawSparkles(sparkleX,sparkleY){ // This draws the sparkles on the right side (the yellow diamonds)
