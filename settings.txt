@@ -8,46 +8,310 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+ let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false // TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = true// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 25;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+let ballX = 90 // Controls the black ball itself
+ let ballY = 125
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = true // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); // Midnight sky blue colour
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = true // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_height = 75;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = true // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+ let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = true // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+let ballX = 90 // Controls the black ball itself
+ let ballY = 125 
+ let hatX = 75 // Controls the purple hat he wears
+ let hatY = 95
+ let sparkleX = 150 // Controls the sparkles on the top right
+ let sparkleY = 50
+ let moustacheX = 80 // Controls the moustache
+ let moustacheY = 125
+
+ let drawsymbol = false // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = true // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 195;
+  pWallpaper.grid_settings.cell_height = 150;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); // Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+let ballX = 133 // Controls the black ball itself
+ let ballY = 150 
+ let hatX = 50 // Controls the purple hat he wears
+ let hatY = 80
+ let sparkleX = 100 // Controls the sparkles on the top right
+ let sparkleY = 25
+ let moustacheX = 30 // Controls the moustache
+ let moustacheY = 95
+
+ let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 220;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 130;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+let ballX = 157 // Controls the black ball itself
+ let ballY = 120 
+ let hatX = 43 // Controls the purple hat he wears
+ let hatY = 115
+ let sparkleX = 93 // Controls the sparkles on the top right
+ let sparkleY = 70
+ let moustacheX = 23 // Controls the moustache
+ let moustacheY = 130
+
+ let drawsymbol = true // TRUE draws the symbol.FALSE turns this 'if statement' off
+ let nofacialhair = false// TRUE removes the moustache. FALSE turns this 'if statement' off
+ let casualeightball = false // TRUE removes the moustache, hat and sparkles. FALSE turns this 'if statement' off
+ let casualdouble = false // TRUE makes two of them. FALSE turns this 'if statement' off
+ let miniballs = false // TRUE makes multiple mini symbols. FALSE turns this 'if statement' off
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print (to remove the lines)
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 110;
+  pWallpaper.grid_settings.cell_height = 250;
+  pWallpaper.grid_settings.row_offset  = 130;
+}
+
+function wallpaper_background() {
+ background(62, 60, 125); //Midnight sky blue
+}
+
+/////////////////////////////////
